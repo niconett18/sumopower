@@ -1,0 +1,35 @@
+/* Additional styles for page headers */
+.page-header {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #f39c12 100%);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.page-header .section-title {
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments for page headers */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 100px 0 40px;
+    }
+    
+    .page-header .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .page-header p {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+}

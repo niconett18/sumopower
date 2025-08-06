@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - SumoPower</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/additional-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/logo.png" alt="SumoPower Logo" class="logo">
+                </a>
+                <div class="navbar-nav">
+                    <a href="../index.html" data-lang-key="nav.home">Beranda</a>
+                    <a href="products.html" data-lang-key="nav.products">Produk</a>
+                    <a href="about.html" data-lang-key="nav.about">Tentang Kami</a>
+                </div>
+                <div class="controls-container">
+                    <div class="lang-switcher">
+                        <button class="lang-btn" data-lang="id">ID</button>
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                    </div>
+                    <button class="navbar-toggler">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="section-title" data-lang-key="products.title">Our Products</h1>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Product Sidebar for Categories -->
+                <aside class="product-sidebar">
+                    <h3 data-lang-key="products.categoryTitle">KATEGORI</h3>
+                    <div id="category-list">
+                        <!-- Categories will be dynamically inserted here -->
+                    </div>
+                    <button id="reset-categories-btn" data-lang-key="products.reset">Reset</button>
+                </aside>
+
+                <!-- Main Product Display Area -->
+                <main class="product-main">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Cari produk...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="product-grid">
+                        <!-- Products will be dynamically loaded here -->
+                    </div>
+                    <div class="see-more-container">
+                        <button id="see-more-btn" class="btn btn-primary" data-lang-key="products.seeMore">Lihat Lebih</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 data-lang-key="footer.sumopower">SumoPower</h3>
+                <p data-lang-key="footer.question">Punya pertanyaan? Hubungi kami sekarang.</p>
+                <p><strong data-lang-key="footer.address">Alamat:</strong><br> TPI BOS RAYMOND</p>
+            </div>
+            <div class="footer-col">
+                <h3 data-lang-key="footer.contact">Pusat Kontak</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> sumopower.indo@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> (+62) 852 - 8100 - 2569</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-lang-key="footer.info">Informasi</h3>
+                <ul>
+                    <li><a href="products.html" data-lang-key="footer.info.products">Produk</a></li>
+                    <li><a href="#" data-lang-key="footer.info.catalog">Katalog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-lang-key="footer.connect">Tetap Terhubung</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-lang-key="footer.copyright">&copy; 2024 SumoPower. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6285281002569" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <span class="whatsapp-text" data-lang-key="whatsapp.text">Need help? Chat with us</span>
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="../assets/js/products.js"></script>
+    <script src="../assets/js/products-script.js"></script>
+</body>
+</html>
