@@ -200,11 +200,24 @@ document.addEventListener('DOMContentLoaded', function() {
             card.className = 'product-card';
             card.style.animationDelay = `${index * 0.05}s`;
             card.innerHTML = `
-                <img src="${product.imageUrl}" alt="${product[nameKey]}" onerror="this.onerror=null;this.src='https://placehold.co/300x300/CCCCCC/FFFFFF?text=Image+Not+Found';">
+                <div class="product-image">
+                    <img src="${product.imageUrl}" alt="${product[nameKey]}" onerror="this.onerror=null;this.src='https://placehold.co/300x300/CCCCCC/FFFFFF?text=Image+Not+Found';">
+                </div>
                 <span class="product-category">${translations[currentLanguage][product.category_key]}</span>
-                <h3>${product[nameKey]}</h3>
-                <a href="${product.shopeeUrl}" target="_blank" class="btn btn-secondary">${translations[currentLanguage]['product.viewOnShopee']}</a>
+                <h3 class=\"product-title\">${product[nameKey]}</h3>
+                <button class=\"title-toggle\" aria-label=\"Toggle full title\">View more</button>
+                <a href="${product.shopeeUrl}" target="_blank" class="shopee-link">
+                    <div class="shopee-brand">
+                        <img src="assets/images/shopeelogo.png" alt="Shopee" class="shopee-logo">
+                        <span class="shopee-text">Shopee</span>
+                    </div>
+                </a>
             `;
+            const toggleBtn = card.querySelector('.title-toggle');
+            toggleBtn.addEventListener('click', () => {
+                card.classList.toggle('expanded');
+                toggleBtn.textContent = card.classList.contains('expanded') ? 'Show less' : 'View more';
+            });
             productGrid.appendChild(card);
         });
 

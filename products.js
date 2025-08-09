@@ -19,74 +19,74 @@ const allProducts = [
     },
     {
         id: 3,
-        name_id: "Baterai Sumopower Infinix Hot 30i X6631 / Hot 40 Pro / Note 10 Pro NFC X695 / Note 11 Pro X697 / Note 11S X698 / Zero 5G 2023 X6815-BL 49IX Double Power Original 100%",
-        name_en: "Sumopower Battery Infinix Hot 30i X6631 / Hot 40 Pro / Note 10 Pro NFC X695 / Note 11 Pro X697 / Note 11S X698 / Zero 5G 2023 X6815-BL 49IX Double Power Original 100%",
+        name_id: "Sumopower Battery Infinix Hot 30i / Hot 40 Pro / Note 10 Pro NFC X695 / Note 11 Pro / Note 11S / Zero 5G 2023 - BL-49LX",
+        name_en: "Sumopower Battery Infinix Hot 30i / Hot 40 Pro / Note 10 Pro NFC X695 / Note 11 Pro / Note 11S / Zero 5G 2023 - BL-49LX",
         category_key: "category.infinix",
-        imageUrl: "https://placehold.co/300x300/CCCCCC/FFFFFF?text=Infinix+Battery",
+        imageUrl: "assets/images/infinix/BL-49LX.png",
         shopeeUrl: "https://shopee.co.id/"
     },
     {
         id: 4,
-        name_id: "Baterai Sumopower Infinix Hot 30i X669C / Hot 40i / Smart 7 X6515 / Smart 8 X6525 / Smart 8 Pro X6525B / Smart 5 X6532 / Smart 9 BL49NX Double Power Original 100%",
-        name_en: "Sumopower Battery Infinix Hot 30i X669C / Hot 40i / Smart 7 X6515 / Smart 8 X6525 / Smart 8 Pro X6525B / Smart 5 X6532 / Smart 9 BL49NX Double Power Original 100%",
+        name_id: "Sumopower Battery Infinix Hot 30i / Hot 40i / Smart 7 / Smart 8 / Smart 8 Pro / Smart 5 / Smart 9 - BL-49NX",
+        name_en: "Sumopower Battery Infinix Hot 30i / Hot 40i / Smart 7 / Smart 8 / Smart 8 Pro / Smart 5 / Smart 9 - BL-49NX",
         category_key: "category.infinix",
-        imageUrl: "https://placehold.co/300x300/CCCCCC/FFFFFF?text=Infinix+Battery",
+        imageUrl: "assets/images/infinix/BL-49NX.png",
         shopeeUrl: "https://shopee.co.id/"
     },
     {
         id: 5,
-        name_id: "Baterai Sumopower Infinix hot 8 (x650) / hot 9 (x655) / hot 9 pro (x655F) / Hot 20i (X665E) /Note 7 Lite (X656) / Smart 5 (X687) / Smart 6 (X6511) / Smart 6 Plus (X6823)/ BL-49FX Double Power Original 100%",
-        name_en: "Sumopower Battery Infinix hot 8 (x650) / hot 9 (x655) / hot 9 pro (x655F) / Hot 20i (X665E) /Note 7 Lite (X656) / Smart 5 (X687) / Smart 6 (X6511) / Smart 6 Plus (X6823)/ BL-49FX Double Power Original 100%",
+        name_id: "Sumopower Battery Infinix Hot 8 / Hot 9 / Hot 9 Pro / Hot 20i / Note 7 Lite / Smart 5 / Smart 6 / Smart 6 Plus - BL-49FX",
+        name_en: "Sumopower Battery Infinix Hot 8 / Hot 9 / Hot 9 Pro / Hot 20i / Note 7 Lite / Smart 5 / Smart 6 / Smart 6 Plus - BL-49FX",
         category_key: "category.infinix",
-        imageUrl: "https://placehold.co/300x300/CCCCCC/FFFFFF?text=Infinix+Battery",
+        imageUrl: "assets/images/infinix/BL-49FX.png",
         shopeeUrl: "https://shopee.co.id/"
     },
     {
         id: 6,
-        name_id: "Baterai Sumopower Infinix Hot 12 X6817 / Hot 12i X665 / Hot 20s X6827 BL-49LK Double Power Original 100%",
-        name_en: "Sumopower Battery Infinix Hot 12 X6817 / Hot 12i X665 / Hot 20s X6827 BL-49LK Double Power Original 100%",
+        name_id: "Sumopower Battery Infinix Hot 12 / Hot 12i / Hot 20s - BL-49LK",
+        name_en: "Sumopower Battery Infinix Hot 12 / Hot 12i / Hot 20s - BL-49LK",
         category_key: "category.infinix",
-        imageUrl: "https://placehold.co/300x300/CCCCCC/FFFFFF?text=Infinix+Battery",
+        imageUrl: "assets/images/infinix/BL-49LK.png",
         shopeeUrl: "https://shopee.co.id/"
     },
     {
         id: 7,
-        name_id: "Baterai Sumopower Infinix Hot 7 Lite (X690B) / Hot 11s NFC (X6812B) /HOT 12 Pro (X668C) / Note 7 (X690) / Note 10 (X693) / Zero X Neo (X6810) BL-49GX Double Power Original 100%",
-        name_en: "Sumopower Battery Infinix Hot 7 Lite (X690B) / Hot 11s NFC (X6812B) /HOT 12 Pro (X668C) / Note 7 (X690) / Note 10 (X693) / Zero X Neo (X6810) BL-49GX Double Power Original 100%",
+        name_id: "Sumopower Battery Infinix Hot 7 Lite / Hot 11s / Hot 12 Pro / Note 7 / Note 10 / Zero X Neo - BL-49GX",
+        name_en: "Sumopower Battery Infinix Hot 7 Lite / Hot 11s / Hot 12 Pro / Note 7 / Note 10 / Zero X Neo - BL-49GX",
         category_key: "category.infinix",
-        imageUrl: "https://placehold.co/300x300/CCCCCC/FFFFFF?text=Infinix+Battery",
+        imageUrl: "assets/images/infinix/BL-49GX.png",
         shopeeUrl: "https://shopee.co.id/"
     },
     {
         id: 8,
-        name_id: "Baterai Sumopower Infinix Hot 8 Play X680 / Hot 10s X689/ Hot 10 Play X680B / Hot 11 Play X688 / Hot 12 Play X6816 / X6816D NFC / Hot 30 Play X6835 BL-58BX Double Power Original 100%",
-        name_en: "Sumopower Battery Infinix Hot 8 Play X680 / Hot 10s X689/ Hot 10 Play X680B / Hot 11 Play X688 / Hot 12 Play X6816 / X6816D NFC / Hot 30 Play X6835 BL-58BX Double Power Original 100%",
+        name_id: "Sumopower Battery Infinix Hot 8 Play / Hot 10s / Hot 10 Play / Hot 11 Play / Hot 12 Play / Hot 30 Play - BL-58BX",
+        name_en: "Sumopower Battery Infinix Hot 8 Play / Hot 10s / Hot 10 Play / Hot 11 Play / Hot 12 Play / Hot 30 Play - BL-58BX",
         category_key: "category.infinix",
-        imageUrl: "https://placehold.co/300x300/CCCCCC/FFFFFF?text=Infinix+Battery",
+        imageUrl: "assets/images/infinix/BL-58BX.png",
         shopeeUrl: "https://shopee.co.id/"
     },
     {
         id: 9,
-        name_id: "Baterai Sumopower Infinix S5 X652 / S5 Lite X652B / Smart 4 X653 BL-39LX Double Power Original 100%",
-        name_en: "Sumopower Battery Infinix S5 X652 / S5 Lite X652B / Smart 4 X653 BL-39LX Double Power Original 100%",
+        name_id: "Sumopower Battery Infinix S5 / S5 Lite / Smart 4 - BL-39LX",
+        name_en: "Sumopower Battery Infinix S5 / S5 Lite / Smart 4 - BL-39LX",
         category_key: "category.infinix",
-        imageUrl: "https://placehold.co/300x300/CCCCCC/FFFFFF?text=Infinix+Battery",
+        imageUrl: "assets/images/infinix/BL-39LX.png",
         shopeeUrl: "https://shopee.co.id/"
     },
     {
         id: 10,
-        name_id: "Baterai Sumopower Infinix Hot 10 X682/Hot 11 X662/Note 8 X692/Note 8i X683 BL-51BX Double Power Original 100%",
-        name_en: "Sumopower Battery Infinix Hot 10 X682/Hot 11 X662/Note 8 X692/Note 8i X683 BL-51BX Double Power Original 100%",
+        name_id: "Sumopower Battery Infinix Hot 10 / Hot 11 / Note 8 / Note 8i - BL-51BX",
+        name_en: "Sumopower Battery Infinix Hot 10 / Hot 11 / Note 8 / Note 8i - BL-51BX",
         category_key: "category.infinix",
-        imageUrl: "https://placehold.co/300x300/CCCCCC/FFFFFF?text=Infinix+Battery",
+        imageUrl: "assets/images/infinix/BL-51BX.png",
         shopeeUrl: "https://shopee.co.id/"
     },
     {
         id: 11,
-        name_id: "Baterai Sumopower Infinix Note 11 NFC X663B / Note 12 X663/Note 12 G96 X670/Note 12 2023 X676C / Note 12i 2022 X677 BL-49KX Double Power Original 100%",
-        name_en: "Sumopower Battery Infinix Note 11 NFC X663B / Note 12 X663/Note 12 G96 X670/Note 12 2023 X676C / Note 12i 2022 X677 BL-49KX Double Power Original 100%",
+        name_id: "Sumopower Battery Infinix Note 11 NFC / Note 12 / Note 12 G96 / Note 12 2023 / Note 12i 2022 - BL-49KX",
+        name_en: "Sumopower Battery Infinix Note 11 NFC / Note 12 / Note 12 G96 / Note 12 2023 / Note 12i 2022 - BL-49KX",
         category_key: "category.infinix",
-        imageUrl: "https://placehold.co/300x300/CCCCCC/FFFFFF?text=Infinix+Battery",
+        imageUrl: "assets/images/infinix/BL-49KX.png",
         shopeeUrl: "https://shopee.co.id/"
     },
     {

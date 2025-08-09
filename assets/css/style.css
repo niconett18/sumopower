@@ -1,3 +1,35 @@
+.product-card .product-title {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    min-height: 4.2em; /* 3 lines */
+}
+
+.product-card.expanded .product-title {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    min-height: auto;
+}
+
+.product-card .title-toggle {
+    background: none;
+    border: none;
+    color: #9aa0a6; /* light grey */
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 2px 0 8px;
+    text-align: center;
+}
+
+.product-card .title-toggle:hover {
+    text-decoration: underline;
+}
 /* --- General Styling & Variables --- */
 :root {
     --primary-color: #FFC107; /* Vibrant Yellow */
@@ -9,7 +41,7 @@
     --transition-speed: 0.3s;
     --transition-timing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --section-padding: 80px 0;
-    --container-max-width: 1200px;
+    --container-max-width: 1400px;
     --border-radius: 8px;
     --box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
@@ -431,16 +463,16 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
 .product-card {
     background: var(--white-color);
     border-radius: var(--border-radius);
     border: 1px solid var(--light-gray);
-    text-align: left;
-    padding: 24px;
+    text-align: center;
+    padding: 8px 16px 16px;
     transition: transform var(--transition-speed) var(--transition-timing), box-shadow var(--transition-speed) var(--transition-timing);
     display: flex;
     flex-direction: column;
@@ -458,12 +490,21 @@ body {
     box-shadow: 0 10px 25px rgba(255, 193, 7, 0.15);
 }
 
-.product-card img {
+.product-card .product-image {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.product-card .product-image img {
     max-width: 100%;
-    height: 200px;
+    max-height: 190px;
     object-fit: contain;
-    margin-bottom: 25px;
-    align-self: center;
 }
 
 .product-card .product-category {
@@ -480,7 +521,12 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     flex-grow: 1;
-    min-height: 55px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* clamp long titles */
+    overflow: hidden;
+    min-height: 66px; /* 1.4 * 1.1rem * 3 approx */
 }
 
 .product-card .btn-secondary {

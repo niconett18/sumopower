@@ -60,20 +60,17 @@
 
 /* Shopee logo styling */
 .product-card .shopee-link .shopee-logo {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
     display: block;
     position: relative;
-    top: 20px;
+    top: 0;
 }
 
 /* Shopee text styling */
 .product-card .shopee-text {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--secondary-color);
-    letter-spacing: 0.025em;
+    display: none !important;
 }
 
 /* --- Brands Section Styles --- */
@@ -157,9 +154,9 @@
     }
     
     .product-card .shopee-link .shopee-logo {
-        width: 28px;
-        height: 28px;
-        top: 16px;
+        width: 22px;
+        height: 22px;
+        top: 0;
     }
     
     .product-card .shopee-text {
@@ -252,9 +249,9 @@
     }
     
     .product-card .shopee-link .shopee-logo {
-        width: 24px;
-        height: 24px;
-        top: 14px;
+        width: 18px;
+        height: 18px;
+        top: 0;
     }
     
     .product-card .shopee-text {
