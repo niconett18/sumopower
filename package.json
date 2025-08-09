@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "SumoPower - Powering Your World - Battery and Charger Products",
   "private": true,
-  "scripts": {
-    "build": "echo 'Static site - no build required'",
-    "start": "echo 'Static site - serve with any static server'"
-  },
+  "scripts": {},
   "keywords": [
     "battery",
     "charger",
