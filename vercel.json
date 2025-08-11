@@ -1,18 +1,13 @@
 {
   "version": 2,
   "name": "sumopower-website",
-  "outputDirectory": ".",
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "pages/**", "use": "@vercel/static" },
-    { "src": "assets/**", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/products", "dest": "/pages/products.html" },
-    { "src": "/about", "dest": "/pages/about.html" },
-    { "src": "/technology", "dest": "/technology.html" },
-    { "src": "/", "dest": "/index.html" }
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/products", "destination": "/pages/products.html" },
+    { "source": "/about", "destination": "/pages/about.html" },
+    { "source": "/technology", "destination": "/technology.html" }
   ],
   "headers": [
     {
