@@ -36,6 +36,11 @@
     }
 }
 
+/* About section: push the Read More button lower */
+.about-text .btn.btn-secondary {
+    margin-top: 40px;
+}
+
 /* --- Modern Minimalistic Shopee Link --- */
 .product-card .shopee-link {
     display: flex;
@@ -48,6 +53,55 @@
 
 .product-card .shopee-link:hover {
     transform: scale(1.1);
+}
+
+/* --- Featured Products Carousel (Home) --- */
+.featured-carousel {
+    position: relative;
+}
+
+.featured-carousel .carousel-viewport {
+    overflow: hidden;
+}
+
+.featured-carousel .carousel-track {
+    display: flex;
+    gap: 24px;
+    will-change: transform;
+}
+
+.featured-carousel .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid var(--light-gray);
+    cursor: pointer;
+}
+
+.featured-carousel .carousel-btn.prev { left: -10px; }
+.featured-carousel .carousel-btn.next { right: -10px; }
+
+/* Ensure product cards inside carousel use the same look as products page */
+.featured-carousel .product-card {
+    min-width: calc((100% - 5 * 24px) / 6); /* 6 per view, 5 gaps */
+}
+
+@media (max-width: 1200px) {
+    .featured-carousel .product-card { min-width: calc((100% - 3 * 24px) / 4); }
+}
+@media (max-width: 992px) {
+    .featured-carousel .product-card { min-width: calc((100% - 2 * 24px) / 3); }
+}
+@media (max-width: 768px) {
+    .featured-carousel .product-card { min-width: calc((100% - 1 * 20px) / 2); }
+}
+@media (max-width: 480px) {
+    .featured-carousel .product-card { min-width: 100%; }
 }
 
 /* Shopee brand styling */
