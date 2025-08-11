@@ -7,7 +7,7 @@ const allProducts = [
         name_en: "Sumopower Battery Infinix Hot 30i / Hot 40 Pro / Note 10 Pro NFC X695 / Note 11 Pro / Note 11S / Zero 5G 2023 - BL-49LX",
         category_key: "category.infinix",
         imageUrl: "../assets/images/infinix/BL-49LX.png",
-        shopeeUrl: "https://shopee.co.id/"
+        shopeeUrl: "https://shopee.co.id/Baterai-Sumopower-Infinix-Hot-12-X6817-Hot-12i-X665-Hot-20s-X6827-BL-49LX-Double-Power-Original-100--i.1433685724.43352419947"
     },
     {
         id: 4,
@@ -15,7 +15,7 @@ const allProducts = [
         name_en: "Sumopower Battery Infinix Hot 30i / Hot 40i / Smart 7 / Smart 8 / Smart 8 Pro / Smart 5 / Smart 9 - BL-49NX",
         category_key: "category.infinix",
         imageUrl: "../assets/images/infinix/BL-49NX.png",
-        shopeeUrl: "https://shopee.co.id/"
+        shopeeUrl: "https://shopee.co.id/Baterai-Sumopower-Infinix-Hot-30i-X669C-Hot-40i-Smart-7-X6515-Smart-8-X6525-Smart-8-Pro-X6525B-Smart-9-X6532-Smart-9-BL49NX-Double-Power-Original-100--i.1433685724.41152436279"
     },
     {
         id: 5,
@@ -23,7 +23,7 @@ const allProducts = [
         name_en: "Sumopower Battery Infinix Hot 8 / Hot 9 / Hot 9 Pro / Hot 20i / Note 7 Lite / Smart 5 / Smart 6 / Smart 6 Plus - BL-49FX",
         category_key: "category.infinix",
         imageUrl: "../assets/images/infinix/BL-49FX.png",
-        shopeeUrl: "https://shopee.co.id/"
+        shopeeUrl: "https://https://shopee.co.id/Baterai-Sumopower-infinix-hot-8-(x650)-hot-9-(x655)-hot-9-pro-(x655f)-Hot-20i-(X665E)-Note-7-Lite-(X656)-Smart-5-(X657)-Smart-6-(X6511)-Smart-6-Plus-(X6823)-BL-49FX-Double-Power-Original-100--i.1433685724.28886989830.co.id/"
     },
     {
         id: 6,
@@ -31,7 +31,7 @@ const allProducts = [
         name_en: "Sumopower Battery Infinix Hot 12 / Hot 12i / Hot 20s - BL-49LK",
         category_key: "category.infinix",
         imageUrl: "../assets/images/infinix/BL-49LK.png",
-        shopeeUrl: "https://shopee.co.id/"
+        shopeeUrl: "https://shopee.co.id/Baterai-Sumopower-Infinix-Hot-12-X6817-Hot-12i-X665-Hot-20s-X6827-BL-49LX-Double-Power-Original-100--i.1433685724.43352419947"
     },
     {
         id: 7,
@@ -39,7 +39,7 @@ const allProducts = [
         name_en: "Sumopower Battery Infinix Hot 7 Lite / Hot 11s / Hot 12 Pro / Note 7 / Note 10 / Zero X Neo - BL-49GX",
         category_key: "category.infinix",
         imageUrl: "../assets/images/infinix/BL-49GX.png",
-        shopeeUrl: "https://shopee.co.id/"
+        shopeeUrl: "https://https://shopee.co.id/Baterai-Sumopower-Infinix-Hot-7-Lite-(X690B)-Hot-11s-NFC-(X6812B)-HOT-12-Pro-(X668C)-Note-7-(X690)-Note-10-(X693)-Zero-X-Neo-(X6810)-BL-49GX-Double-Power-Original-100--i.1433685724.41502432343.co.id/"
     },
     {
         id: 8,
@@ -47,7 +47,7 @@ const allProducts = [
         name_en: "Sumopower Battery Infinix Hot 8 Play / Hot 10s / Hot 10 Play / Hot 11 Play / Hot 12 Play / Hot 30 Play - BL-58BX",
         category_key: "category.infinix",
         imageUrl: "../assets/images/infinix/BL-58BX.png",
-        shopeeUrl: "https://shopee.co.id/"
+        shopeeUrl: "https://https://shopee.co.id/Baterai-Sumopower-Infinix-Hot-9-Play-X680-Hot-10s-X689-Hot-10-Play-X688B-Hot-11-Play-X688-Hot-12-Play-X6816-X6816D-NFC-Hot-30-Play-X6835-BL-58BX-Double-Power-Original-100--i.1433685724.28086989553.co.id/"
     },
     {
         id: 9,
@@ -55,7 +55,7 @@ const allProducts = [
         name_en: "Sumopower Battery Infinix S5 / S5 Lite / Smart 4 - BL-39LX",
         category_key: "category.infinix",
         imageUrl: "../assets/images/infinix/BL-39LX.png",
-        shopeeUrl: "https://shopee.co.id/"
+        shopeeUrl: "https://shopee.co.id/Baterai-Sumopower-Infinix-S5-X652-S5-Lite-X652B-Smart-4-X653-BL-39LX-Double-Power-Original-100--i.1433685724.40702432605"
     },
     {
         id: 10,
@@ -63,7 +63,7 @@ const allProducts = [
         name_en: "Sumopower Battery Infinix Hot 10 / Hot 11 / Note 8 / Note 8i - BL-51BX",
         category_key: "category.infinix",
         imageUrl: "../assets/images/infinix/BL-51BX.png",
-        shopeeUrl: "https://shopee.co.id/"
+        shopeeUrl: "https://shopee.co.id/Baterai-Sumopower-Infinix-Hot-10-X682-Hot-11-X662-Note-8-X692-Note-8I-X683-BL-51BX-Double-Power-Original-100--i.1433685724.42552442354"
     },
     {
         id: 11,
@@ -71,7 +71,7 @@ const allProducts = [
         name_en: "Sumopower Battery Infinix Note 11 NFC / Note 12 / Note 12 G96 / Note 12 2023 / Note 12i 2022 - BL-49KX",
         category_key: "category.infinix",
         imageUrl: "../assets/images/infinix/BL-49KX.png",
-        shopeeUrl: "https://shopee.co.id/"
+        shopeeUrl: "https://shopee.co.id/Baterai-Sumopower-Infinix-Note-11-NFC-X663B-Note-12-X663-Note-12-G96-X670-Note-12-2023-X676C-Note-12i-2022-X677-BL-49KX-Double-Power-Original-100--i.1433685724.41252432368"
     },
     // Samsung Products
     {
