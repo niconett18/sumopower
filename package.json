@@ -12,5 +12,11 @@
   ],
   "author": "SumoPower",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "@react-three/drei": "^10.6.1",
+    "@react-three/postprocessing": "^3.0.4",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.539.0",
+    "tailwind-merge": "^3.3.1"
+  }
 }

@@ -697,6 +697,10 @@ body {
 
 .footer-col ul li {
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.6;
 }
 
 .footer-col ul li a {
@@ -710,9 +714,13 @@ body {
 }
 
 .footer-col ul li i {
-    margin-right: 12px;
+    margin-right: 0;
     width: 20px;
+    min-width: 20px;
     text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-links {

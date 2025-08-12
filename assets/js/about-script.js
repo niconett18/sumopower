@@ -236,4 +236,27 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // --- Make brand logos clickable to open filtered product category ---
+    const brandToCategory = {
+        'OPPO': 'category.oppo',
+        'ASUS': 'category.asus',
+        'SAMSUNG': 'category.samsung',
+        'vivo': 'category.vivo',
+        'Xiaomi': 'category.xiaomi',
+        'NOKIA': 'category.nokia',
+        'Apple': 'category.iphone'
+    };
+
+    document.querySelectorAll('.brands-carousel img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+            const alt = (img.getAttribute('alt') || '').trim();
+            const categoryKey = brandToCategory[alt];
+            if (categoryKey) {
+                // Navigate to products page with category pre-selected
+                window.location.href = 'products.html?category=' + encodeURIComponent(categoryKey);
+            }
+        });
+    });
 });

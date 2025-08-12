@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.animationDelay = `${index * 0.05}s`;
             card.innerHTML = `
                 <div class="product-image">
-                    <img src="${product.imageUrl}" alt="${product[nameKey]}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/300x300/CCCCCC/FFFFFF?text=Image+Not+Found';">
+                    <img src="${product.imageUrl}" alt="${product[nameKey]}" loading="lazy" style="cursor: zoom-in;" onerror="this.onerror=null;this.src='https://placehold.co/300x300/CCCCCC/FFFFFF?text=Image+Not+Found';">
                 </div>
                 <span class="product-category">${translations[currentLanguage][product.category_key]}</span>
                 <h3 class=\"product-title\">${product[nameKey]}</h3>
@@ -251,4 +251,96 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     setLanguage(currentLanguage);
+
+    // Preselect category from query string (for brand logo deep links)
+    const params = new URLSearchParams(window.location.search);
+    const preselectCategory = params.get('category');
+    if (preselectCategory && categoryListContainer) {
+        const checkbox = categoryListContainer.querySelector(`input[value="${preselectCategory}"]`);
+        if (checkbox) {
+            checkbox.checked = true;
+            updateProductView();
+        }
+    }
+
+    // Image lightbox for product previews
+    const ensureLightbox = () => {
+        let overlay = document.getElementById('image-lightbox');
+        if (overlay) return overlay;
+        overlay = document.createElement('div');
+        overlay.id = 'image-lightbox';
+        overlay.style.cssText = [
+            'position:fixed',
+            'inset:0',
+            'background:rgba(0,0,0,0.8)',
+            'display:none',
+            'align-items:center',
+            'justify-content:center',
+            'z-index:1000',
+            'padding:20px'
+        ].join(';');
+
+        const img = document.createElement('img');
+        img.style.cssText = [
+            'max-width:90vw',
+            'max-height:85vh',
+            'border-radius:8px',
+            'box-shadow:0 10px 40px rgba(0,0,0,0.5)'
+        ].join(';');
+        img.alt = '';
+
+        const closeBtn = document.createElement('button');
+        closeBtn.setAttribute('aria-label', 'Close');
+        closeBtn.textContent = '×';
+        closeBtn.style.cssText = [
+            'position:absolute',
+            'top:16px',
+            'right:20px',
+            'font-size:32px',
+            'color:#fff',
+            'background:transparent',
+            'border:none',
+            'cursor:pointer',
+            'line-height:1'
+        ].join(';');
+
+        overlay.appendChild(img);
+        overlay.appendChild(closeBtn);
+        document.body.appendChild(overlay);
+
+        const close = () => {
+            overlay.style.display = 'none';
+            document.body.style.overflow = '';
+        };
+
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) close();
+        });
+        closeBtn.addEventListener('click', close);
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && overlay.style.display !== 'none') close();
+        });
+
+        overlay.__img = img;
+        overlay.__close = close;
+        return overlay;
+    };
+
+    const openLightbox = (src, altText) => {
+        const overlay = ensureLightbox();
+        overlay.__img.src = src;
+        overlay.__img.alt = altText || '';
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    };
+
+    if (productGrid) {
+        productGrid.addEventListener('click', (e) => {
+            const target = e.target;
+            if (target && target.tagName === 'IMG' && target.closest('.product-image')) {
+                e.preventDefault();
+                openLightbox(target.src, target.alt);
+            }
+        });
+    }
 });

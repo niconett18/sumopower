@@ -97,7 +97,7 @@ sumopower-website/
 ## Support
 
 For questions or support, contact:
-- Email: sumopower.indo@gmail.com
+- Email: officialsumopower@gmail.com
 - WhatsApp: (+62) 852 - 8100 - 2569
 
 ---
