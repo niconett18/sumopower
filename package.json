@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SumoPower - Powering Your World - Battery and Charger Products",
   "private": true,
-  "scripts": { },
+  "scripts": {},
   "keywords": [
     "battery",
     "charger",
@@ -11,5 +11,6 @@
     "electronics"
   ],
   "author": "SumoPower",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
